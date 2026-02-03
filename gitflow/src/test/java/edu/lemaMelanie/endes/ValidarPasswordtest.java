@@ -10,9 +10,10 @@ public class ValidarPasswordtest {
         assertTrue(v.validar("Password123"));
     }
     @Test
-    void passwordInvalida(){
-        ValidarPassword v = new ValidarPassword();
-        assertFalse(v.validar("Password123"));
+    void passwordInvalidalongitud() {
+        ValidarPassword validador = new ValidarPassword();
+        boolean resultado = validador.validar("123");
+        assertFalse(resultado);
     }
 
     @Test
